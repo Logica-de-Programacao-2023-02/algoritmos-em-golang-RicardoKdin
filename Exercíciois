@@ -1,0 +1,155 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int
+	var y int
+	var z int
+
+	fmt.Print("Informe os Números: ")
+	fmt.Scan(&x)
+	fmt.Scan(&y)
+	fmt.Scan(&z)
+	fmt.Println("A soma desses números é", x+y+z)
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var numero int
+
+	fmt.Println("Informe o Número: ")
+	fmt.Scan(&numero)
+	fmt.Println("Seu dobro é", numero*2)
+	fmt.Println("Seu triplo é", numero*3)
+	fmt.Println("Seu quadruplo é", numero*4)
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var peso float32
+	var altura float32
+
+	fmt.Print("Informe seu Peso em Kg e Altura em Metros: ")
+	fmt.Scan(&peso)
+	fmt.Scan(&altura)
+	fmt.Println("Seu IMC é", peso/(altura*altura))
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x float32
+	var y float32
+	var z float32
+
+	fmt.Print("Informe os Números: ")
+	fmt.Scan(&x)
+	fmt.Scan(&y)
+	fmt.Scan(&z)
+	fmt.Println("Sua média ponderada é", (x*2+y*3+z*5)/10)
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var idade int
+
+	fmt.Print("Informe sua Idade: ")
+	fmt.Scan(&idade)
+	fmt.Println("Sua idade em dias é aproximadamente", idade*365)
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var salario float32
+
+	fmt.Print("Informe o seu Salário: ")
+	fmt.Scan(&salario)
+	fmt.Println("Seu aumento foi de", salario*0.15)
+	fmt.Println("Seu novo salário é de", salario*1.15)
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int
+
+	fmt.Print("Informe o Número: ")
+	fmt.Scan(&x)
+	fmt.Println("Seu antecessor é", x-1)
+	fmt.Println("Seu sucessor é", x+1)
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var dias float32
+	var valor float32
+
+	fmt.Print("Informe o número de dias trabalhados e o valor da sua diária: ")
+	fmt.Scan(&dias)
+	fmt.Scan(&valor)
+	fmt.Println("Seu salário é de", dias*valor)
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var preço float32
+
+	fmt.Print("Informe o preço do produto: ")
+	fmt.Scan(&preço)
+	fmt.Println("O desconto é de", preço*0.10)
+	fmt.Println("O novo preço é de", preço*0.90)
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var peso float32
+
+	fmt.Print("Informe o seu peso: ")
+	fmt.Scan(&peso)
+	fmt.Println("Seu peso em libras é", peso*2.2046)
+
+}
