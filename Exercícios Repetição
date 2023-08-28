@@ -1,0 +1,43 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	for x := 1; x <= 10; x++ {
+		fmt.Println(x)
+	}
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	for x := 0; x <= 20; x++ {
+		if x%2 == 1 {
+			continue
+		}
+		fmt.Println(x)
+	}
+	fmt.Println("Números pares até 20")
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	for x := 0; x <= 19; x++ {
+		if x%2 == 0 {
+			continue
+		}
+		fmt.Println(x)
+	}
+	fmt.Println("Números ímpares até 19")
+
+}
