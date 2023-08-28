@@ -1,0 +1,66 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int
+	var y int
+
+	fmt.Print("Insira os Números: ")
+	fmt.Scan(&x)
+	fmt.Scan(&y)
+
+	if x > y {
+		fmt.Println("X é maior que Y")
+	} else if x < y {
+		fmt.Println("X é menor que Y")
+	} else {
+		fmt.Println("X e Y são iguais")
+	}
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int
+	var y int
+	var z int
+
+	fmt.Print("Insira os números: ")
+	fmt.Scan(&x)
+	fmt.Scan(&y)
+	fmt.Scan(&z)
+
+	if x < y && x < z {
+		fmt.Println("X é o menor")
+	} else if y < x && y < z {
+		fmt.Println("Y é o menor")
+	} else if z < x && z < y {
+		fmt.Println("Z é o menor")
+	}
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int
+
+	fmt.Print("Insira o número: ")
+	fmt.Scan(&x)
+
+	if x%2 == 0 {
+		fmt.Println("X é par")
+	} else {
+		fmt.Println("X é ímpar")
+	}
+
+}
