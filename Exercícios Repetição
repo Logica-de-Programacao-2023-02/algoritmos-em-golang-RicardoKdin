@@ -49,7 +49,7 @@ import "fmt"
 func main() {
 
 	for x := 0; x <= 30; x += 3 {
-		fmt.Println(x)
+		fmt.Println(x) 
 	}
 	fmt.Println("Números múltiplos de 3")
 
