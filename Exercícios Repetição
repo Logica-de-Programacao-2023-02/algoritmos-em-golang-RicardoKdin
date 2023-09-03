@@ -54,3 +54,119 @@ func main() {
 	fmt.Println("Números múltiplos de 3")
 
 }
+
+package main
+
+import "fmt"
+
+func main() {
+
+	for x := 10; x > 0; x-- {
+		fmt.Println(x)
+	}
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int
+	fmt.Print(`Digite um numero: `)
+	fmt.Scan(&x)
+	fmt.Println(x * 1)
+	fmt.Println(x * 2)
+	fmt.Println(x * 3)
+	fmt.Println(x * 4)
+	fmt.Println(x * 5)
+	fmt.Println(x * 6)
+	fmt.Println(x * 7)
+	fmt.Println(x * 8)
+	fmt.Println(x * 9)
+	fmt.Println(x * 10)
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	for x := 0; x <= 100; x++ {
+		fmt.Println(x)
+
+		if x%3 == 0 && x%5 == 0 {
+			fmt.Println(`FizzBuzz`)
+		} else if x%3 == 0 {
+			fmt.Println(`Fizz`)
+		} else if x%5 == 0 {
+			fmt.Println(`Buzz`)
+		}
+	}
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int
+
+	fmt.Print("Digite um número: ")
+	fmt.Scan(&x)
+
+	for i := 1; i <= x; i++ {
+		if x%i == 0 {
+			fmt.Println("Numeros divisores: ", i)
+		}
+	}
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x, soma int
+	numeros := 0
+
+	for {
+		fmt.Print("Digite um número: ")
+		fmt.Scan(&x)
+
+		if x == 0 {
+			break
+		}
+		soma += x
+		numeros++
+	}
+	media := soma / numeros
+	fmt.Println("Média aritmética:", media)
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x, y int
+
+	for {
+		fmt.Print(`Digite os numeros: `)
+		fmt.Scan(&x)
+
+		if x == 0 {
+			break
+		}
+		if x > y {
+			y = x
+		}
+	}
+	fmt.Println("O maior número inserido é", y)
+}
