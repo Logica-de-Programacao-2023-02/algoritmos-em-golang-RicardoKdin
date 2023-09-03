@@ -94,3 +94,138 @@ func main() {
 	}
 
 }
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int
+
+	fmt.Print(`Digite um numero: `)
+	fmt.Scan(&x)
+
+	if x%3 == 0 && x%5 == 0 {
+		fmt.Println(`Múltiplo de 3 e 5 ao mesmo tempo`)
+	} else {
+		fmt.Println(`Não é múltiplo de 3 e 5 ao mesmo tempo`)
+	}
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x, y int
+
+	fmt.Print(`Digite o numero: `)
+	fmt.Scan(&x, &y)
+
+	if x >= 0 && y >= 0 {
+		fmt.Println(`Sua multiplicação é igual a`, x*y)
+	} else {
+		fmt.Println(`Sua soma é igual a`, x+y)
+	}
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x float32
+
+	fmt.Print(`Digite seu salário: `)
+	fmt.Scan(&x)
+
+	if x < 1000 {
+		fmt.Println(`Seu novo salário é de R$`, x*1.10)
+	} else {
+		fmt.Println(`Seu novo salário é de R$`, x*1.05)
+	}
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int
+
+	fmt.Print(`Digite um números: `)
+	fmt.Scan(&x)
+
+	switch x {
+	case 1:
+		fmt.Println(`Domingo`)
+	case 2:
+		fmt.Println(`Segunda`)
+	case 3:
+		fmt.Println(`Terça`)
+	case 4:
+		fmt.Println(`Quarta`)
+	case 5:
+		fmt.Println(`Quinta`)
+	case 6:
+		fmt.Println(`Sexta`)
+	case 7:
+		fmt.Println(`Sábado`)
+	}
+
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x, y, z int
+
+	fmt.Print(`Digite os números: `)
+	fmt.Scan(&x, &y, &z)
+
+	if x < y && x < z && y < z {
+		fmt.Println(x, y, z)
+	} else if x < y && x < z && z < y {
+		fmt.Println(x, z, y)
+	} else if y < x && y < z && x < z {
+		fmt.Println(y, x, z)
+	} else if y < x && y < z && z < x {
+		fmt.Println(y, z, x)
+	} else if z < x && z < y && x < y {
+		fmt.Println(z, x, y)
+	} else if z < x && z < y && y < x {
+		fmt.Println(z, y, x)
+	}
+}
+
+package main
+
+import "fmt"
+
+func main() {
+
+	var x int
+
+	fmt.Print("Digite sua idade: ")
+	fmt.Scan(&x)
+
+	if x <= 9 {
+		fmt.Println(`Mirim`)
+	} else if x >= 10 && x <= 13 {
+		fmt.Println(`Infantil`)
+	} else if x >= 14 && x <= 17 {
+		fmt.Println(`Juvenil`)
+	} else if x >= 18 {
+		fmt.Println(`Adulto`)
+	}
+}
