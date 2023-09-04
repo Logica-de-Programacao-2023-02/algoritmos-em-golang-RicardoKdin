@@ -155,17 +155,16 @@ import "fmt"
 
 func main() {
 
-	var x, y int
+	var x, maior int
+        x = -1
 
-	for {
+	for x != 0 {
 		fmt.Print(`Digite os numeros: `)
 		fmt.Scan(&x)
 
-		if x == 0 {
-			break
 		}
-		if x > y {
-			y = x
+		if x > maior {
+			maior = x
 		}
 	}
 	fmt.Println("O maior número inserido é", y)
